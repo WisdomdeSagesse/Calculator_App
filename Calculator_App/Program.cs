@@ -38,7 +38,7 @@ internal class Program
                 double answer = operators[symbolIndex](first_num, next_num);
                 Console.WriteLine($"Answer is : {answer}");
                 Console.WriteLine($"Press 'y' to continue with {answer} or 'n' to start a new calculation or 'q' to quit");
-                char input = Console.ReadKey().KeyChar;
+                char input = Char.ToLower(Console.ReadKey().KeyChar);
                 Console.WriteLine();
                 if (input == 'y')
                 {
